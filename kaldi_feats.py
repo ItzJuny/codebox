@@ -27,5 +27,5 @@ os.system(opt)
 
 """
 from kaldi_io import read_mat_scp
-data = { k:m for k,m in read_mat_scp(path_to_scpdata) }
+data = { k:m for k,m in read_mat_scp(scpfile) }
 """
