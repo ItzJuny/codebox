@@ -1,7 +1,7 @@
 import os
 import numpy as np 
-path="/home/jun/Class/temp/wav"
-savedir="/home/jun/Class/temp/wavfeat"
+wavpath="/home/path/to/wav"
+savedir="/home/path/to/wavfeat"
 # loading wavfiles
 wavfiles=[os.path.join(path,i) for i in os.listdir(path) if os.path.splitext(i)[-1]==".wav"]
 if not os.path.exists(savedir):
