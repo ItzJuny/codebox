@@ -24,3 +24,8 @@ os.system(opt)
 # cmvn.scp cmvn.ark(CMVN)
 opt="compute-cmvn-stats scp:%s/feat.scp ark,scp:%s/cmvn.ark,%s/cmvn.scp"%(savedir,savedir,savedir)
 os.system(opt)
+
+"""
+from kaldi_io import read_mat_scp
+data = { k:m for k,m in read_mat_scp(path_to_scpdata) }
+"""
