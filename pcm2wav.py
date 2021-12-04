@@ -18,11 +18,10 @@ def pcm2wav(in_pcm,out_wav):
     wave_out.setframerate(8000)
     wave_out.writeframes(str_data)
 
-path=r"d:\Users\jun\Pictures\3367\pcm\CN\10s"
+path=r"path/to/pcmfiles"
 
 for dirname, _, filenames in os.walk(path):
     for filename in filenames:
         file=os.path.join(dirname, filename)
         newfile=file.rsplit(".pcm")[0]+".wav"
         pcm2wav(file,newfile)
-        break
