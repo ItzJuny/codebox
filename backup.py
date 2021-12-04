@@ -23,8 +23,8 @@ def get_md5(filename):
             myhash.update(value)
     return myhash.hexdigest()
 
-srcpath=r"C:\Users\Wu-Junyan\Desktop\huh"
-dstpath=r"I:\huh"
+srcpath=r"/path/src"
+dstpath=r"/path/dst"
 
 # 判断dst中文件是否在src中存在，不存在删除，若存在需md5一致，否则删除。
 print("----------------------处理备份文件夹------------------------------")
