@@ -6,3 +6,5 @@
 - pcmsplit.py 分割pcm文件
 - wavsplit.py 分割wav文件
 - readnpy.py 读取npy文件
+- pdf_process.py 转换pdf和jpg
+- backup.py 简易备份两个目录中的文件
